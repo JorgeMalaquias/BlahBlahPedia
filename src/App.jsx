@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import GlobalStyle from './style/global-style';
-import { Subscription } from './pages/subscription/subscription';
+import { Subscription } from './pages/subscription';
 import { MainScreen } from './pages/main-screen/MainScreen';
 
 function App() {
