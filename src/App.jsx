@@ -4,6 +4,7 @@ import { Subscription } from './pages/subscription/subscription';
 import { MainScreen } from './pages/main-screen/MainScreen';
 
 function App() {
+
   return (
     <BrowserRouter>
       <GlobalStyle />

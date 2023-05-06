@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
-import userSlice from "./user/slice";
+import userReducer from "./user/slice";
 
-const rootReducer = combineReducers({ userSlice });
+const rootReducer = combineReducers({ userReducer });
 
 export default rootReducer;

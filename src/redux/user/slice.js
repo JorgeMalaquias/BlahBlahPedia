@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { subscribe } from "../../actions/user/subscribe";
+import userActions from "../../actions/user/user-actions";
 
 const initialState = {
     userName: null
@@ -9,8 +9,8 @@ const userSlice = createSlice({
     name: 'user',
     initialState,
     reducers: {
-        subscribe
+        subscribe: userActions.subscribe
     }
 });
-
-export default userSlice;
+export const { subscribe } = userSlice.actions;
+export default userSlice.reducer;
