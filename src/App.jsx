@@ -1,9 +1,10 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import GlobalStyle from './style/global-style';
-import { Subscription } from './pages/subscription/subscription';
-import { MainScreen } from './pages/main-screen/MainScreen';
+import { Subscription } from './pages/subscription';
+import { MainScreen } from './pages/main-screen';
 
 function App() {
+
   return (
     <BrowserRouter>
       <GlobalStyle />
