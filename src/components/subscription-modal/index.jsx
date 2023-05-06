@@ -2,14 +2,16 @@ import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
 import { subscribe } from "../../redux/user/slice";
 import Style from "./style";
+import { useNavigate } from "react-router-dom";
 
 export function SubscriptionModal() {
-    const { userName } = useSelector((rootReducer) => rootReducer.userReducer);
-    console.log(userName);
+
     const dispatch = useDispatch();
+    const navigate = useNavigate();
     function handleSubscription(event) {
         event.preventDefault();
         dispatch(subscribe(name));
+        navigate('/main-screen');
     };
     const [name, setName] = useState("");
 
