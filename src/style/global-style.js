@@ -49,6 +49,7 @@ const GlobalStyle = createGlobalStyle`
     strong {
         font-weight: bold;
     }
+    
     *{
         box-sizing: border-box;
         font-family: 'Roboto', sans-serif;
@@ -59,13 +60,13 @@ const GlobalStyle = createGlobalStyle`
         bottom:0;
         left: 0;
         right: 0;
-        
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: #DDDDDD;
+        height: 100vh;
     }
-    .root{
+    #root{
         width: 100%;
         height: 100%;
         display: flex;
