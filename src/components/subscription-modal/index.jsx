@@ -11,7 +11,7 @@ export function SubscriptionModal() {
     function handleSubscription(event) {
         event.preventDefault();
         dispatch(subscribe(name));
-        navigate('/main-screen');
+        navigate("/main-screen");
     };
     const [name, setName] = useState("");
 

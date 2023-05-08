@@ -40,6 +40,7 @@ const NewPostForm = styled.form`
     }
     input:nth-child(5){
         height: 74px;
+        text-align: top;
     }
     button{
         height: 32px;
@@ -48,6 +49,12 @@ const NewPostForm = styled.form`
         background-color: #7695EC;
         color: #FFFFFF;
         border: none;
+        opacity: ${props => (props.isAnyFieldEmpty) ? 0.3 : 1};
+    }
+    input::placeholder{
+        position: absolute;
+        top: 0;
+        padding: 7px;
     }
 `
 

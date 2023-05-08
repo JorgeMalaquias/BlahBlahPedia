@@ -1,5 +1,5 @@
 function subscribe(state, action) {
-    state.userName = action.payload;
+    state.username = action.payload;
 }
 
 const userActions = {

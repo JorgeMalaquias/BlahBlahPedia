@@ -9,8 +9,8 @@ function App() {
     <BrowserRouter>
       <GlobalStyle />
       <Routes>
-        <Route path='/' element={<Subscription />} />
-        <Route path='/main-screen' element={<MainScreen />} />
+        <Route path="/" element={<Subscription />} />
+        <Route path="/main-screen" element={<MainScreen />} />
       </Routes>
     </BrowserRouter>
   );

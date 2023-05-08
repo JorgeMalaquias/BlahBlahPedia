@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import userActions from "../../actions/user/user-actions";
 
 const initialState = {
-    userName: null
+    username: null
 };
 
 const userSlice = createSlice({
