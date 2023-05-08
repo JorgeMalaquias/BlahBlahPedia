@@ -7,7 +7,7 @@ export default function useGetPosts() {
         error: getPostsError,
         act: getPosts,
         data: posts
-    } = useAsync(postApi.getPosts);
+    } = useAsync(postApi.getPosts, false);
 
     return {
         getPostsLoading,

@@ -6,6 +6,7 @@ const NewPostForm = styled.form`
     justify-content: space-between;
     align-items: flex-end;
     height: 334px;
+    min-height:334px;
     width: 752px;
     border-radius: 16px;
     padding: 24px;
@@ -33,14 +34,15 @@ const NewPostForm = styled.form`
         width: 704px;
         border-radius: 8px;
         border: 1px solid #777777;
-    }
-    input:nth-child(3){
         height: 32px;
-        
     }
-    input:nth-child(5){
+    textarea{
         height: 74px;
         text-align: top;
+        width: 704px;
+        border-style: none;
+        border-radius: 8px;
+        border: 1px solid #777777;
     }
     button{
         height: 32px;
@@ -51,7 +53,7 @@ const NewPostForm = styled.form`
         border: none;
         opacity: ${props => (props.isAnyFieldEmpty) ? 0.3 : 1};
     }
-    input::placeholder{
+    input::placeholder, textarea::placeholder{
         position: absolute;
         top: 0;
         padding: 7px;

@@ -5,9 +5,11 @@ const Page = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     font-family: 'Roboto', sans-serif;
+    > *{
+        margin-bottom: 24px;
+    }
 `
 const Style = {
     Page

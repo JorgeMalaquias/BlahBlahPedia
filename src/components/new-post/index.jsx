@@ -42,7 +42,7 @@ export function NewPost() {
             <h3>Title</h3>
             <input value={title} type="text" placeholder="Ex: Hello world" required onChange={(e) => setTitle(e.target.value)} />
             <h3>Content</h3>
-            <input value={content} type="text" placeholder="Ex: Content here" required onChange={(e) => setContent(e.target.value)} />
+            <textarea value={content} placeholder="Ex: Content here" required onChange={(e) => setContent(e.target.value)} cols="30" rows="10"></textarea>
             {(creatingPost) ?
                 <button type="submit" disabled={true}>Creating...</button>
                 :
