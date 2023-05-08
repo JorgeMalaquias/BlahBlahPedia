@@ -1,5 +1,5 @@
 import useAsync from "../useAsync";
-import * as postApi from "../../../actions/user/requests/postApi";
+import * as postApi from "../../../actions/requests/postApi";
 
 export default function useCreatePost() {
     const {

@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import userActions from "../../actions/user/user-actions";
+import userActions from "../../actions/dispatched-actions/user/user-actions";
 
 const initialState = {
     username: null
