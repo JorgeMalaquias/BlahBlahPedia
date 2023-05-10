@@ -73,11 +73,12 @@ const GlobalStyle = createGlobalStyle`
         justify-content: center;
         align-items: center;
     }
-
     a{
         text-decoration: none;
     }
-
+    button{
+        cursor: pointer;
+    }
 `
 
 

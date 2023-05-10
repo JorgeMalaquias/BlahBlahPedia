@@ -51,6 +51,7 @@ const SubscriptionForm = styled.form`
         letter-spacing: 0em;
         color:#FFFFFF;
         opacity: ${props => (props.isNameEmpty) ? 0.3 : 1};
+        cursor: ${props => (props.isAnyFieldEmpty) ? 'auto' : 'pointer'};
     }
 `
 

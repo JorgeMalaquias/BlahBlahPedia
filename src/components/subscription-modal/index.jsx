@@ -1,10 +1,18 @@
 import { useState } from "react";
 import Style from "./style";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 export function SubscriptionModal() {
     const [name, setName] = useState("");
     const navigate = useNavigate();
+    const username = window.localStorage.getItem("username");
+
+    useEffect(() => {
+        if (username) {
+            navigate("/main-screen");
+        }
+    }, []);
 
     function handleSubscription(event) {
         event.preventDefault();

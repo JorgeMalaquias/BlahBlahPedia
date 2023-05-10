@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 const Header = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 80px;
     width: 100%;
     padding: 27px 37px;
@@ -11,11 +14,20 @@ const Header = styled.div`
     letter-spacing: 0em;
     text-align: left;
     color:  #FFFFFF;
-
+    div{
+        font-size: 16px;
+    }
+`
+const Logout = styled.div`
+    cursor: pointer;
+    :hover{
+        font-size: 20px;
+    }
 `
 
 const Style = {
-    Header
+    Header,
+    Logout
 };
 
 export default Style;

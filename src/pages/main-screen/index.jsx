@@ -16,7 +16,6 @@ export function MainScreen() {
     const username = window.localStorage.getItem("username");
     useEffect(() => {
         if (!username) {
-            alert("You need to subscribe to access the feed! You will be redirected to the subscription page!");
             navigate("/");
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
