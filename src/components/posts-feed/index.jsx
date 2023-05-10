@@ -24,12 +24,11 @@ export function PostsFeed() {
         listPosts();
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [updateStatus]);
-    console.log(updateStatus);
 
     return (
         <>
             {(posts) ? <Style.Container>
-                {posts.results.map((e) => { return <Post key={e.id} title={e.title} content={e.content} username={e.username} createdAt={e.created_datetime} /> })}
+                {posts.results.map((e) => { return <Post key={e.id} id={e.id} title={e.title} content={e.content} username={e.username} createdAt={e.created_datetime} /> })}
             </Style.Container> : <div>Loading posts...</div>}
         </>
 
