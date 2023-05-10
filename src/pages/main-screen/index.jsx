@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { DeletePostModal } from "../../components/delete-post-modal";
+import { EditPostModal } from "../../components/edit-post-modal";
 import { Header } from "../../components/header";
 import { NewPost } from "../../components/new-post";
 import { PostsFeed } from "../../components/posts-feed";
@@ -21,6 +22,7 @@ export function MainScreen() {
                 <NewPost />
                 <PostsFeed />
                 {/*<DeletePostModal />*/}
+                <EditPostModal />
             </Style.Page>
         </>
 
