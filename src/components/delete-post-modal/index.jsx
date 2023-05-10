@@ -20,7 +20,7 @@ export function DeletePostModal() {
         }
     }
     function unSelectPost() {
-        dispatch(unSelectPostToDelete);
+        dispatch(unSelectPostToDelete());
     }
     return (
         <Style.Container>
