@@ -1,6 +1,8 @@
+import { useSelector } from "react-redux";
 import Style from "./style";
 
 export function DeletePostModal() {
+    const { postToDeleteId } = useSelector((rootReducer) => rootReducer.postReducer);
     return (
         <Style.Container>
             <Style.Modal>

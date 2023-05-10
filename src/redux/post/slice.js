@@ -3,7 +3,8 @@ import postActions from "../../actions/dispatched-actions/post/post-actions";
 
 const initialState = {
     updateStatus: false,
-    postToDeleteId: null
+    postToDeleteId: null,
+    postToEdit: null
 };
 
 const postSlice = createSlice({
