@@ -12,14 +12,16 @@ import Style from "./style";
 export function MainScreen() {
     const { postToDeleteId } = useSelector((rootReducer) => rootReducer.postReducer);
     const { postToEditId } = useSelector((rootReducer) => rootReducer.postReducer);
-    const navigate = useNavigate();
     const username = window.localStorage.getItem("username");
+    const navigate = useNavigate();
+
     useEffect(() => {
         if (!username) {
             navigate("/");
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
+
     return (
         <>
             <Style.Page>

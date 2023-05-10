@@ -2,8 +2,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import GlobalStyle from './style/global-style';
 import { Subscription } from './pages/subscription';
 import { MainScreen } from './pages/main-screen';
+import { useSelector } from 'react-redux';
 
-function App() {
+export default function App() {
 
   return (
     <BrowserRouter>
@@ -16,4 +17,3 @@ function App() {
   );
 }
 
-export default App;

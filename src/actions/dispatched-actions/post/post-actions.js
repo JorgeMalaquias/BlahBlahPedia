@@ -13,13 +13,17 @@ function selectPostToEdit(state, action) {
 function unSelectPostToEdit(state, action) {
     state.postToEditId = null;
 }
+function updateUrlGetPosts(state, action) {
+    state.url = action.payload;
+}
 
 const userActions = {
     update,
     selectPostToDelete,
     unSelectPostToDelete,
     selectPostToEdit,
-    unSelectPostToEdit
+    unSelectPostToEdit,
+    updateUrlGetPosts
 };
 
 export default userActions;
