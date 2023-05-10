@@ -8,10 +8,10 @@ function unSelectPostToDelete(state, action) {
     state.postToDeleteId = null;
 }
 function selectPostToEdit(state, action) {
-    state.postToEdit = action.payload;
+    state.postToEditId = action.payload;
 }
 function unSelectPostToEdit(state, action) {
-    state.postToEdit = null;
+    state.postToEditId = null;
 }
 
 const userActions = {
