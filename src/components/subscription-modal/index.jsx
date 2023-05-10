@@ -1,19 +1,24 @@
-import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
-import { subscribe } from "../../redux/user/slice";
 import Style from "./style";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 export function SubscriptionModal() {
-
-    const dispatch = useDispatch();
+    const [name, setName] = useState("");
     const navigate = useNavigate();
+    const username = window.localStorage.getItem("username");
+
+    useEffect(() => {
+        if (username) {
+            navigate("/main-screen");
+        }
+    }, []);
+
     function handleSubscription(event) {
         event.preventDefault();
-        dispatch(subscribe(name));
+        window.localStorage.setItem("username", name);
         navigate("/main-screen");
     };
-    const [name, setName] = useState("");
 
     return (
         <Style.Modal >

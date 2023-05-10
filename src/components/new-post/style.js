@@ -52,9 +52,9 @@ const NewPostForm = styled.form`
         color: #FFFFFF;
         border: none;
         opacity: ${props => (props.isAnyFieldEmpty) ? 0.3 : 1};
+        cursor: ${props => (props.isAnyFieldEmpty) ? 'auto' : 'pointer'};
     }
     input::placeholder, textarea::placeholder{
-        position: absolute;
         top: 0;
         padding: 7px;
     }

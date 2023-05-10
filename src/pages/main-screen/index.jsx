@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { DeletePostModal } from "../../components/delete-post-modal";
 import { EditPostModal } from "../../components/edit-post-modal";
 import { Header } from "../../components/header";
@@ -11,13 +12,14 @@ import Style from "./style";
 export function MainScreen() {
     const { postToDeleteId } = useSelector((rootReducer) => rootReducer.postReducer);
     const { postToEditId } = useSelector((rootReducer) => rootReducer.postReducer);
-    /*useEffect(() => {
+    const navigate = useNavigate();
+    const username = window.localStorage.getItem("username");
+    useEffect(() => {
         if (!username) {
-            console.log('eeei')
             navigate("/");
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);*/
+    }, []);
     return (
         <>
             <Style.Page>
