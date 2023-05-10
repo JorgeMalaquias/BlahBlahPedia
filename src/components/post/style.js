@@ -58,7 +58,7 @@ const PostInfos = styled.div`
         font-weight: 400;
     }
 `
-const Content = styled.text`
+const Content = styled.div`
     padding: 0 24px;
     font-size: 18px;
     font-weight: 400;
