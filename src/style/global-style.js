@@ -63,7 +63,7 @@ const GlobalStyle = createGlobalStyle`
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #DDDDDD;
+        background-color: #FFFFFF;
         height: 100vh;
     }
     #root{
