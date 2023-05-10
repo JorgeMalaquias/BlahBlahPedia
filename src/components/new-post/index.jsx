@@ -2,17 +2,15 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import useCreatePost from "../hooks/api/useCreatePost";
 import { update } from "../../redux/post/slice";
-
 import Style from "./style";
 
 export function NewPost() {
-    const { username } = useSelector((rootReducer) => rootReducer.userReducer);
+    const username = window.localStorage.getItem("username");
     const { updateStatus } = useSelector((rootReducer) => rootReducer.postReducer);
     const [title, setTitle] = useState("");
     const [content, setContent] = useState("");
-    const { createPost } = useCreatePost();
-
     const [creatingPost, setCreatingPost] = useState(false);
+    const { createPost } = useCreatePost();
     const dispatch = useDispatch();
 
     async function handlePostCreation(event) {

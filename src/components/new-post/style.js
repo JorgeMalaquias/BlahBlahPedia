@@ -54,7 +54,6 @@ const NewPostForm = styled.form`
         opacity: ${props => (props.isAnyFieldEmpty) ? 0.3 : 1};
     }
     input::placeholder, textarea::placeholder{
-        position: absolute;
         top: 0;
         padding: 7px;
     }

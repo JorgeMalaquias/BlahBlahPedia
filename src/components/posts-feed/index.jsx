@@ -14,7 +14,6 @@ export function PostsFeed() {
         async function listPosts() {
             try {
                 const response = await getPosts();
-                console.log(response);
                 setPosts(response);
             }
             catch (error) {

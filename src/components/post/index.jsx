@@ -2,18 +2,20 @@ import { memo } from "react";
 import Style from "./style";
 import { TbTrashXFilled } from "react-icons/tb";
 import { RxPencil2 } from "react-icons/rx";
-import { useDispatch, useSelector } from "react-redux";
-import { deletePost, selectPostToDelete, selectPostToEdit } from "../../redux/post/slice";
+import { useDispatch } from "react-redux";
+import { selectPostToDelete, selectPostToEdit } from "../../redux/post/slice";
 
 function Post({ id, title, content, username, createdAt }) {
-    const { username: userLogged } = useSelector((rootReducer) => rootReducer.userReducer);
+    const userLogged = window.localStorage.getItem("username");
     const dispatch = useDispatch();
+
     function handleDeletePost() {
         dispatch(selectPostToDelete(id));
     }
     function handleEditPost() {
         dispatch(selectPostToEdit(id));
     }
+
     return (
         <Style.Post>
             <Style.Header>

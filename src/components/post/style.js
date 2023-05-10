@@ -11,6 +11,7 @@ const Post = styled.div`
     border: 1px solid #999999;
     overflow: hidden;
     margin-bottom:24px;
+    word-wrap: break-word;
     > * {
         padding: 24px;
     }
@@ -43,7 +44,6 @@ const PostInfos = styled.div`
     align-items: center;
     width: 100%;
     height: fit-content;
-    padding: 0 24px;
     margin-bottom: 16px;
     color: #777777;
     > div{
@@ -59,7 +59,6 @@ const PostInfos = styled.div`
     }
 `
 const Content = styled.div`
-    padding: 0 24px;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;

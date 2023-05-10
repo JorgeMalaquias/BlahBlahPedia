@@ -55,6 +55,10 @@ const Modal = styled.form`
     textarea{
         height: 74px;
     }
+    input::placeholder, textarea::placeholder{
+        top: 0;
+        padding: 7px;
+    }
     
 `
 const Options = styled.div`

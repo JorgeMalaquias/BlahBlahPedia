@@ -36,7 +36,7 @@ export function EditPostModal() {
             <Style.Modal onSubmit={handleEditPost}>
                 <h1>Edit item</h1>
                 <h3>Title</h3>
-                <input value={title} type="text" placeholder="Ex: Hello world" onChange={(e) => setTitle(e.target.value)} />
+                <input value={title} type="text" placeholder="Ex: Hello world" required onChange={(e) => setTitle(e.target.value)} />
                 <h3>Content</h3>
                 <textarea value={content} placeholder="Ex: Content here" required cols="30" rows="10" onChange={(e) => setContent(e.target.value)}></textarea>
                 <Style.Options>
