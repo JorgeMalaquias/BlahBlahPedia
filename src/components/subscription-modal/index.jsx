@@ -12,6 +12,7 @@ export function SubscriptionModal() {
         if (username) {
             navigate("/main-screen");
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     function handleSubscription(event) {

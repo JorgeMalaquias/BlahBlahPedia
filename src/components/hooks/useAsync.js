@@ -8,7 +8,6 @@ export default function useAsync(handler, immediate = true) {
     const act = async (...args) => {
         setLoading(true);
         setError(null);
-
         try {
             const data = await handler(...args);
             setData(data);
@@ -25,7 +24,6 @@ export default function useAsync(handler, immediate = true) {
         if (immediate) {
             act();
         }
-
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 

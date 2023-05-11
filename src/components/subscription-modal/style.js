@@ -17,7 +17,9 @@ const Modal = styled.div`
         letter-spacing: 0em;
         color:#000000;
     }
-
+    @media (max-width:550px){
+        width: 90%;
+    }
 `;
 
 const SubscriptionForm = styled.form`
@@ -54,8 +56,6 @@ const SubscriptionForm = styled.form`
         cursor: ${props => (props.isNameEmpty) ? 'auto' : 'pointer'};
     }
 `
-
-
 
 const Style = {
     Modal,

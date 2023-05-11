@@ -10,6 +10,9 @@ const Page = styled.div`
     > *{
         margin-bottom: 24px;
     }
+    @media (max-width:850px){
+        width: 100vw;
+    }
 `
 const Style = {
     Page

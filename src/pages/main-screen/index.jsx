@@ -8,7 +8,6 @@ import { NewPost } from "../../components/new-post";
 import { PostsFeed } from "../../components/posts-feed";
 import Style from "./style";
 
-
 export function MainScreen() {
     const { postToDeleteId } = useSelector((rootReducer) => rootReducer.postReducer);
     const { postToEditId } = useSelector((rootReducer) => rootReducer.postReducer);
@@ -32,6 +31,5 @@ export function MainScreen() {
                 {(postToEditId) ? <EditPostModal /> : <></>}
             </Style.Page>
         </>
-
     );
 }

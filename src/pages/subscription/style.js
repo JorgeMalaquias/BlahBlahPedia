@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 const Page = styled.div`
     width: 100%;
     height: 100%;
@@ -9,7 +8,6 @@ const Page = styled.div`
     align-items: center;
     background-color: #DDDDDD;
 `
-
 
 const Style = {
     Page

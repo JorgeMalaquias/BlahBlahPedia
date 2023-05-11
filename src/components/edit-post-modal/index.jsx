@@ -1,16 +1,17 @@
 import { useDispatch, useSelector } from "react-redux";
+import { useState } from "react";
 import useEditPost from "../hooks/api/useEditPost";
 import { update, unSelectPostToEdit } from "../../redux/post/slice";
 import Style from "./style";
-import { useState } from "react";
 
 export function EditPostModal() {
     const { postToEditId } = useSelector((rootReducer) => rootReducer.postReducer);
     const { updateStatus } = useSelector((rootReducer) => rootReducer.postReducer);
-    const { editPost } = useEditPost();
-    const dispatch = useDispatch();
     const [title, setTitle] = useState();
     const [content, setContent] = useState();
+
+    const { editPost } = useEditPost();
+    const dispatch = useDispatch();
 
     async function handleEditPost(event) {
         event.preventDefault();
@@ -31,6 +32,7 @@ export function EditPostModal() {
     function unSelectPost() {
         dispatch(unSelectPostToEdit());
     }
+
     return (
         <Style.Container>
             <Style.Modal onSubmit={handleEditPost}>

@@ -6,8 +6,10 @@ import Style from "./style";
 export function DeletePostModal() {
     const { postToDeleteId } = useSelector((rootReducer) => rootReducer.postReducer);
     const { updateStatus } = useSelector((rootReducer) => rootReducer.postReducer);
+
     const { deletePost } = useDeletePost();
     const dispatch = useDispatch();
+
     async function handleDeletePost() {
         try {
             await deletePost(postToDeleteId);
@@ -22,6 +24,7 @@ export function DeletePostModal() {
     function unSelectPost() {
         dispatch(unSelectPostToDelete());
     }
+
     return (
         <Style.Container>
             <Style.Modal>

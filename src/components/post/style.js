@@ -15,6 +15,9 @@ const Post = styled.div`
     > * {
         padding: 24px;
     }
+    @media (max-width:850px){
+        width: 100%;
+    }
 `
 const Header = styled.div`
     display: flex;
