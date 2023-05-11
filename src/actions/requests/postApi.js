@@ -4,8 +4,8 @@ export async function createPost(data) {
     const response = await api.post("", data);
     return response.data;
 }
-export async function getPosts() {
-    const response = await api.get("");
+export async function getPosts(url) {
+    const response = await api.get(url);
     return response.data;
 }
 

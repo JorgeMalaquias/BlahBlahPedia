@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import useCreatePost from "../hooks/api/useCreatePost";
-import { update } from "../../redux/post/slice";
+import { update, updateUrlGetPosts } from "../../redux/post/slice";
 import Style from "./style";
 
 export function NewPost() {
@@ -26,6 +26,7 @@ export function NewPost() {
             alert('Post created!');
             setTitle("");
             setContent("");
+            dispatch(updateUrlGetPosts("https://dev.codeleap.co.uk/careers/?limit=15"));
             dispatch(update(!updateStatus));
         }
         catch (err) {

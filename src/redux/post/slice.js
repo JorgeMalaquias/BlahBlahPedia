@@ -4,7 +4,8 @@ import postActions from "../../actions/dispatched-actions/post/post-actions";
 const initialState = {
     updateStatus: false,
     postToDeleteId: null,
-    postToEdit: null
+    postToEdit: null,
+    url: "https://dev.codeleap.co.uk/careers/?limit=15"
 };
 
 const postSlice = createSlice({
@@ -15,8 +16,9 @@ const postSlice = createSlice({
         selectPostToDelete: postActions.selectPostToDelete,
         unSelectPostToDelete: postActions.unSelectPostToDelete,
         selectPostToEdit: postActions.selectPostToEdit,
-        unSelectPostToEdit: postActions.unSelectPostToEdit
+        unSelectPostToEdit: postActions.unSelectPostToEdit,
+        updateUrlGetPosts: postActions.updateUrlGetPosts
     }
 });
-export const { update, selectPostToDelete, unSelectPostToDelete, selectPostToEdit, unSelectPostToEdit } = postSlice.actions;
+export const { update, selectPostToDelete, unSelectPostToDelete, selectPostToEdit, unSelectPostToEdit, updateUrlGetPosts } = postSlice.actions;
 export default postSlice.reducer;
