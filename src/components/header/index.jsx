@@ -1,8 +1,8 @@
-import Style from "./style";
 import { RiLogoutBoxLine } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
 import { updateUrlGetPosts, update } from "../../redux/post/slice";
 import { useDispatch } from "react-redux";
+import Style from "./style";
 
 export function Header() {
     const username = window.localStorage.getItem("username");

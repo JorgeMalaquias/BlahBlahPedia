@@ -23,9 +23,6 @@ const Header = styled.div`
         h1{
             max-width: 130px;
         }
-        > div > div{
-            
-        }
     }
 `
 const Logout = styled.div`

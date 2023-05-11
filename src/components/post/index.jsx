@@ -1,8 +1,8 @@
 import { memo } from "react";
-import Style from "./style";
 import { TbTrashXFilled } from "react-icons/tb";
 import { RxPencil2 } from "react-icons/rx";
 import { useDispatch } from "react-redux";
+import Style from "./style";
 import { selectPostToDelete, selectPostToEdit } from "../../redux/post/slice";
 
 function Post({ id, title, content, username, createdAt }) {

@@ -36,7 +36,6 @@ const Modal = styled.div`
         text-align: left;
         color: #000000;
     }
-    
 `
 const Options = styled.div`
     button{

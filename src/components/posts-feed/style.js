@@ -27,7 +27,6 @@ const PaginationActions = styled.div`
     }
 `
 
-
 const Style = {
     Container,
     PaginationActions

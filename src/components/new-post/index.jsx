@@ -49,7 +49,6 @@ export function NewPost() {
                     <button type="submit" disabled={(title === "" || content === "")}>Create</button>
                 }
             </div>
-
         </Style.NewPostForm>
     );
 }

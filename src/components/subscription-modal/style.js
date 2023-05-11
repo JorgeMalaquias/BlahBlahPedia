@@ -57,8 +57,6 @@ const SubscriptionForm = styled.form`
     }
 `
 
-
-
 const Style = {
     Modal,
     SubscriptionForm
