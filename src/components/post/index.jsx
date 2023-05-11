@@ -16,6 +16,33 @@ function Post({ id, title, content, username, createdAt }) {
         dispatch(selectPostToEdit(id));
     }
 
+    function calculatingTime() {
+        const milliseconds = Date.parse(new Date()) - Date.parse(createdAt);
+        const minutes = milliseconds / 60000;
+        const hours = minutes / 60;
+        const days = hours / 24;
+
+        if (days >= 2) {
+            return `${Math.floor(days)} days ago`;
+        }
+        if (days >= 1) {
+            return `Yesterday`;
+        }
+        if (hours >= 2) {
+            return `${Math.floor(hours)} hours ago`;
+        }
+        if (hours >= 1) {
+            return `1 hour ago`;
+        }
+        if (minutes >= 2) {
+            return `${Math.floor(minutes)} minutes ago`;
+        }
+        if (minutes >= 1) {
+            return `1 minute ago`;
+        }
+        return "Just now";
+    }
+
     return (
         <Style.Post>
             <Style.Header>
@@ -31,7 +58,7 @@ function Post({ id, title, content, username, createdAt }) {
             <Style.Body>
                 <Style.PostInfos>
                     <div>@{username}</div>
-                    <div>{createdAt}</div>
+                    <div>{calculatingTime()}</div>
                 </Style.PostInfos>
                 <Style.Content>{content}</Style.Content>
             </Style.Body>
