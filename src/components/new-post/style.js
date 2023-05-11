@@ -13,8 +13,10 @@ const NewPostForm = styled.form`
     background-color: #FFFFFF;
     color: #000000;
     border: 1px solid #999999;
-    h1{
+    > *{
         width:100%;
+    }
+    h1{
         text-align: left;
         font-size: 22px;
         font-weight: 700;
@@ -22,7 +24,6 @@ const NewPostForm = styled.form`
         letter-spacing: 0em;
     }
     h3{
-        width:100%;
         text-align: left;
         font-size: 16px;
         font-weight: 400;
@@ -31,7 +32,6 @@ const NewPostForm = styled.form`
         text-align: left;
     }
     input{
-        width: 704px;
         border-radius: 8px;
         border: 1px solid #777777;
         height: 32px;
@@ -39,7 +39,6 @@ const NewPostForm = styled.form`
     textarea{
         height: 74px;
         text-align: top;
-        width: 704px;
         border-style: none;
         border-radius: 8px;
         border: 1px solid #777777;
@@ -57,6 +56,13 @@ const NewPostForm = styled.form`
     input::placeholder, textarea::placeholder{
         top: 0;
         padding: 7px;
+    }
+    > div{
+        display: flex;
+        justify-content: flex-end;
+    }
+    @media (max-width:850px){
+        width: 90%;
     }
 `
 

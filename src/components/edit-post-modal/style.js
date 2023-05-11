@@ -24,6 +24,9 @@ const Modal = styled.form`
     justify-content: space-between;
     align-items: flex-end;
     background-color: #FFFFFF;
+    @media (max-width:760px){
+        width: 90%;
+    }
     h1{
         width: 100%;
         font-size: 22px;
@@ -67,6 +70,10 @@ const Options = styled.div`
         width: 120px;
         border-radius: 8px;
         border: none;
+        @media (max-width:350px){
+            height: 21px;
+            width: 80px;
+        }
     }
     button:nth-child(1){
         border: 1px solid #000000;

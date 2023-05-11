@@ -42,11 +42,14 @@ export function NewPost() {
             <input value={title} type="text" placeholder="Ex: Hello world" required onChange={(e) => setTitle(e.target.value)} />
             <h3>Content</h3>
             <textarea value={content} placeholder="Ex: Content here" required onChange={(e) => setContent(e.target.value)} cols="30" rows="10"></textarea>
-            {(creatingPost) ?
-                <button type="submit" disabled={true}>Creating...</button>
-                :
-                <button type="submit" disabled={(title === "" || content === "")}>Create</button>
-            }
+            <div>
+                {(creatingPost) ?
+                    <button type="submit" disabled={true}>Creating...</button>
+                    :
+                    <button type="submit" disabled={(title === "" || content === "")}>Create</button>
+                }
+            </div>
+
         </Style.NewPostForm>
     );
 }

@@ -3,6 +3,9 @@ import styled from 'styled-components';
 const Container = styled.div`
     display: flex;
     flex-direction: column;
+    @media (max-width:850px){
+        width: 90%;
+    }
 `
 const PaginationActions = styled.div`
     display: flex;

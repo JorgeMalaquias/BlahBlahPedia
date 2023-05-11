@@ -10,12 +10,22 @@ const Header = styled.div`
     background-color: #7695EC;
     font-size: 22px;
     font-weight: 700;
-    line-height: 26px;
+    line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
     color:  #FFFFFF;
     div{
         font-size: 16px;
+        text-align: right;
+    }
+    @media(max-width:550px){
+        font-size: 18px;
+        h1{
+            max-width: 130px;
+        }
+        > div > div{
+            
+        }
     }
 `
 const Logout = styled.div`
