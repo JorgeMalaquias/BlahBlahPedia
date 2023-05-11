@@ -4,9 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Used technologies
 
-.ReactJs
-.Redux
-.Styled-components
+. ReactJs
+. Redux
+. Styled-components
 
 ## Available Scripts
 
