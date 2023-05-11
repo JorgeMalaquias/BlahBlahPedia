@@ -36,10 +36,12 @@ export function PostsFeed() {
     function handleRenderNextPosts() {
         dispatch(updateUrlGetPosts(nextUrl));
         dispatch(update(!updateStatus));
+        window.scrollTo(0, 0);
     }
     function handleRenderPreviousPosts() {
         dispatch(updateUrlGetPosts(previousUrl));
         dispatch(update(!updateStatus));
+        window.scrollTo(0, 0);
     }
 
     return (
