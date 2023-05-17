@@ -3,8 +3,14 @@ import GlobalStyle from './style/global-style';
 import { Subscription } from './pages/subscription';
 import { MainScreen } from './pages/main-screen';
 import { useSelector } from 'react-redux';
+import { useEffect, useLayoutEffect } from 'react';
 
 export default function App() {
+
+  useEffect(() => {
+    console.log("dentro do useEffect");
+  }, []);
+  console.log("fora do useEffect");
 
   return (
     <BrowserRouter>
