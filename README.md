@@ -79,8 +79,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 The original prototype of this application has the name "Codeleap Network" instead of "BlahBlahPedia".
 
-Development by: Jorge Jociel Oliveira Malaquia
+Development by: Jorge Jociel Oliveira Malaquia 
 LinkedIn: https://www.linkedin.com/in/jorgemalaquiasdev/
 
-Original prototype by: Codeleap
+Original prototype by: Codeleap 
 LinkedIn: https://www.linkedin.com/company/codeleap-uk/
