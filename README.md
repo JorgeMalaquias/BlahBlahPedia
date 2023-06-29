@@ -1,4 +1,4 @@
-# Codeleap Network
+# BlahBlahPedia
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -74,3 +74,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Credits
+
+The original prototype of this application has the name "Codeleap Network" instead of "BlahBlahPedia".
+
+Development by: Jorge Jociel Oliveira Malaquia
+LinkedIn: https://www.linkedin.com/in/jorgemalaquiasdev/
+
+Original prototype by: Codeleap
+LinkedIn: https://www.linkedin.com/company/codeleap-uk/
