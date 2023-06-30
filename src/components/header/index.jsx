@@ -17,7 +17,7 @@ export function Header() {
 
     return (
         <Style.Header>
-            <h1>CodeLeap Network</h1>
+            <h1>BlahBlahPedia</h1>
             <div>
                 <div>Subscribed as @{username}</div>
                 <Style.Logout onClick={handleLogout}>Logout <RiLogoutBoxLine /></Style.Logout>

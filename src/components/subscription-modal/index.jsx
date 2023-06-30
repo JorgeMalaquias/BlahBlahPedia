@@ -23,7 +23,7 @@ export function SubscriptionModal() {
 
     return (
         <Style.Modal >
-            <h1>Welcome to CodeLeap network!</h1>
+            <h1>Welcome to BlahBlahPedia!</h1>
             <Style.SubscriptionForm isNameEmpty={(name === "")} onSubmit={handleSubscription}>
                 <h3>Please enter your username</h3>
                 <input value={name} type="text" placeholder="Ex: John doe" required onChange={(e) => setName(e.target.value)} />
